@@ -14,6 +14,13 @@ WA.room.onEnterLayer('scheduleZone').subscribe(() => {
 
 WA.room.onLeaveLayer('scheduleZone').subscribe(closePopUp)
 
+WA.room.onEnterLayer('boatingZone').subscribe(() => {
+    console.log('toto')
+    currentPopup =  WA.ui.openPopup("boatingPopup","OH NO!!!\n\nSomeone had a boating accident?",[]);
+})
+
+WA.room.onLeaveLayer('boatingZone').subscribe(closePopUp)
+
 function closePopUp(){
     if (currentPopup !== undefined) {
         currentPopup.close();
