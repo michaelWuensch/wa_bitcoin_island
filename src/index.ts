@@ -6,15 +6,13 @@ import {bootstrapExtra} from "@workadventure/scripting-api-extra";
 bootstrapExtra().catch(e => console.error(e));
 
 let currentPopup: any = undefined;
-const today = new Date();
-const time = today.getHours() + ":" + today.getMinutes();
 
-WA.room.onEnterLayer('clockZone').subscribe(() => {
+WA.room.onEnterLayer('scheduleZone').subscribe(() => {
     console.log('toto')
-    currentPopup =  WA.ui.openPopup("clockPopup","It's " + time,[]);
+    currentPopup =  WA.ui.openPopup("schedulePopup","Room 1: Questions & Answers\n\nRoom 2: Main Meetup\n\nRoom 3: Lightning\n\nBeach: Random Talk",[]);
 })
 
-WA.room.onLeaveLayer('clockZone').subscribe(closePopUp)
+WA.room.onLeaveLayer('scheduleZone').subscribe(closePopUp)
 
 function closePopUp(){
     if (currentPopup !== undefined) {
