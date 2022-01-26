@@ -18,12 +18,12 @@
                     path = path.substr(path, path.length - 'index.html'.length);
                 }
                 const instanceId = Math.random().toString(36).substring(2, 15);
-                const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}island.json`;
+                const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}bungalow.json`;
                 document.getElementById('mapLink').href = url;
                 document.getElementById('mapLink2').href = url;
                 document.getElementById('mapLink').innerText = url;
 
-                const mapUrl = window.location.protocol+'//'+window.location.host+path+'island.json';
+                const mapUrl = window.location.protocol+'//'+window.location.host+path+'bungalow.json';
                 document.getElementById('mapUrl').innerText = mapUrl;
 
                 const gettingStartedLink = 'https://workadventu.re/getting-started?name=Map&mapUrl='+mapUrl;
