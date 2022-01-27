@@ -1,17 +1,36 @@
 ASSETS LICENSE
 
-(Notice)
-Assets distributed with a map are subject to different licenses.
-The license attributed to each tileset can be found or have to be added in the "tilesetCopyright" property of each tileset in the map.
-In addition, you have to add a section below with the specific license of the asset you want to use.
 
+Assets located in "src\assets\workAdventure\": 
 
 WORKADVENTURE SPECIFIC RESOURCES LICENSE
 
 The User shall handle assets with the WorkAdventure specific resources license as follows:
 
 1. These Assets may be used only in maps produced for WorkAdventure (SAAS or self-hosted version).
-
 2. These Assets may be modified (colors or size changed, inverted, trimmed, etc.) only for purposes of use in maps produced for WorkAdventure (SAAS or self-hosted version).
-
 3. These Assets or those modified pursuant to the previous item may undergo Distribution, etc. with maps produced for WorkAdventure. Furthermore, the User may not perform Distribution, etc. of individual Assets or those modified, or Distribution, etc. in combination with programs, etc. other than the map. However, the User may duplicate, transfer, publicly transmit, or enable transmission of personally-modified Assets to other Authorized Users free of charge.
+
+
+
+Assets located in "src\assets\beach\": 
+
+You must not use these assets in any other project! They were purchased for the purpose of this project.
+To use these assets on your own project you have to purchase a license:
+https://kokororeflections.com/product/kr-summer-beach-tileset-for-rpgs/
+
+
+
+Assets located in "src\assets\signpost-outsidestuff\": 
+
+This tileset pack contains couple of signpost which are based from Nemisys signpost(http://opengameart.org/content/lpc-sign-post). Also Nemisys signpost pole is used in cloth line poles, wooden grave cross and scare crow's posts. Dirt holes in graves are from Daniel Eddeland's farming LPC tileset. Other parts of tileset is drawn by me.
+
+Since Nemisys and Daniel Eddeland's farming tileset are used both have only one common license so this is also licensed(CC-BY-SA) under it. 
+Copyright/Attribution Notice: 
+Attribution to Nemisys,Daniel Eddeland (http://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements) and Tuomo Untinen
+
+
+
+Assets located in "src\assets\cc0\": 
+
+These assets are under public domain. (https://creativecommons.org/share-your-work/public-domain/cc0/)
