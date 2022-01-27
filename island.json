@@ -675,6 +675,16 @@
  "orientation":"orthogonal",
  "properties":[
         {
+         "name":"mapCopyright",
+         "type":"string",
+         "value":"Credits: Michael W\u00fcnsch (https:\/\/github.com\/michaelWuensch) \n\nLicense: MIT \n\nCopyright (c) 2022 Michael W\u00fcnsch\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and\/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+        }, 
+        {
+         "name":"mapImage",
+         "type":"string",
+         "value":"island.png"
+        }, 
+        {
          "name":"script",
          "type":"string",
          "value":"script.js"
@@ -686,7 +696,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"src\/assets\/Beach_C (Foliage).png",
+         "image":"src\/assets\/beach\/Beach_C (Foliage).png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -699,7 +709,7 @@
         {
          "columns":16,
          "firstgid":257,
-         "image":"src\/assets\/Beach_A1.png",
+         "image":"src\/assets\/beach\/Beach_A1.png",
          "imageheight":384,
          "imagewidth":512,
          "margin":0,
@@ -742,11 +752,17 @@
         {
          "columns":16,
          "firstgid":449,
-         "image":"src\/assets\/Beach_A2.png",
+         "image":"src\/assets\/beach\/Beach_A2.png",
          "imageheight":384,
          "imagewidth":512,
          "margin":0,
          "name":"Beach_Ground_2",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"MOST OF THE BEACH, SUMMER AND BUNGALOW ASSETS:\n\nYou must not use these assets in any other project! They were purchased for the purpose of this project.\nTo use these assets on your own project you have to purchase a license:\nhttps:\/\/kokororeflections.com\/product\/kr-summer-beach-tileset-for-rpgs\/ \n \n"
+                }],
          "spacing":0,
          "tilecount":192,
          "tileheight":32,
@@ -755,11 +771,17 @@
         {
          "columns":6,
          "firstgid":641,
-         "image":"src\/assets\/WA_Special_Zones.png",
+         "image":"src\/assets\/workAdventure\/WA_Special_Zones.png",
          "imageheight":64,
          "imagewidth":192,
          "margin":0,
          "name":"WA_Special_Zones",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"WORKADVENTURE SPECIFIC RESOURCES LICENSE\n\nThe User shall handle assets with the WorkAdventure specific resources license as follows:\n\n1. These Assets may be used only in maps produced for WorkAdventure (SAAS or self-hosted version).\n2. These Assets may be modified (colors or size changed, inverted, trimmed, etc.) only for purposes of use in maps produced for WorkAdventure (SAAS or self-hosted version).\n3. These Assets or those modified pursuant to the previous item may undergo Distribution, etc. with maps produced for WorkAdventure. Furthermore, the User may not perform Distribution, etc. of individual Assets or those modified, or Distribution, etc. in combination with programs, etc. other than the map. However, the User may duplicate, transfer, publicly transmit, or enable transmission of personally-modified Assets to other Authorized Users free of charge.\n\n"
+                }],
          "spacing":0,
          "tilecount":12,
          "tileheight":32,
@@ -778,7 +800,7 @@
         {
          "columns":49,
          "firstgid":653,
-         "image":"src\/assets\/non-rm-a1-square.png",
+         "image":"src\/assets\/beach\/non-rm-a1-square.png",
          "imageheight":608,
          "imagewidth":1568,
          "margin":0,
@@ -905,7 +927,7 @@
         {
          "columns":16,
          "firstgid":1584,
-         "image":"src\/assets\/Beach_B (Beach).png",
+         "image":"src\/assets\/beach\/Beach_B (Beach).png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -918,7 +940,7 @@
         {
          "columns":16,
          "firstgid":1840,
-         "image":"src\/assets\/Beach_A3.png",
+         "image":"src\/assets\/beach\/Beach_A3.png",
          "imageheight":256,
          "imagewidth":512,
          "margin":0,
@@ -931,7 +953,7 @@
         {
          "columns":16,
          "firstgid":1968,
-         "image":"src\/assets\/Beach_A4.png",
+         "image":"src\/assets\/beach\/Beach_A4.png",
          "imageheight":320,
          "imagewidth":512,
          "margin":0,
@@ -944,7 +966,7 @@
         {
          "columns":16,
          "firstgid":2128,
-         "image":"src\/assets\/Beach_E (Bungalow 2).png",
+         "image":"src\/assets\/beach\/Beach_E (Bungalow 2).png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -957,7 +979,7 @@
         {
          "columns":12,
          "firstgid":2384,
-         "image":"src\/assets\/Doors.png",
+         "image":"src\/assets\/beach\/Doors.png",
          "imageheight":256,
          "imagewidth":384,
          "margin":0,
@@ -970,7 +992,7 @@
         {
          "columns":4,
          "firstgid":2480,
-         "image":"src\/assets\/45DegreeTiles.png",
+         "image":"src\/assets\/cc0\/45DegreeTiles.png",
          "imageheight":64,
          "imagewidth":128,
          "margin":0,
@@ -983,11 +1005,17 @@
         {
          "columns":5,
          "firstgid":2488,
-         "image":"src\/assets\/signpost-outsidestuff.png",
+         "image":"src\/assets\/signpost-outsidestuff\/signpost-outsidestuff.png",
          "imageheight":128,
          "imagewidth":160,
          "margin":0,
          "name":"signpost-outsidestuff",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"ASSETS USED FOR THE \"21\" SIGN:\n\nThis tileset pack contains couple of signpost which are based from Nemisys signpost(http:\/\/opengameart.org\/content\/lpc-sign-post). Also Nemisys signpost pole is used in cloth line poles, wooden grave cross and scare crow's posts. Dirt holes in graves are from Daniel Eddeland's farming LPC tileset. Other parts of tileset is drawn by me.\n\nSince Nemisys and Daniel Eddeland's farming tileset are used both have only one common license so this is also licensed(CC-BY-SA) under it.(https:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/) \nCopyright\/Attribution Notice: \nAttribution to Nemisys,Daniel Eddeland (http:\/\/opengameart.org\/content\/lpc-farming-tilesets-magic-animations-and-ui-elements) and Tuomo Untinen."
+                }],
          "spacing":0,
          "tilecount":20,
          "tileheight":32,
@@ -996,7 +1024,7 @@
         {
          "columns":2,
          "firstgid":2508,
-         "image":"src\/assets\/21.png",
+         "image":"src\/assets\/cc0\/21.png",
          "imageheight":32,
          "imagewidth":64,
          "margin":0,

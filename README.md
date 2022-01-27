@@ -1,10 +1,11 @@
-# WorkAdventure Map Starter Kit
+# BTC-Island
 
-This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
+This is a cozy island perfect for your bitcoin meetups!
+It works using [WorkAdventure](https://workadventu.re).
 
-To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
+If you create an account there, you can import this map by using the following link:
+https://michaelwuensch.github.io/wa_bitcoin_island/bungalow.json
 
-![map](./map.png)
 
 ## Installation
 
@@ -22,11 +23,5 @@ The project will run at http://localhost:8080/
 This project contains multiple licenses:
 
 * [Code license](./LICENSE.code) *(all files except those for other licenses)*
-* [Map license](./LICENSE.map) *(`map.json` and the map visual as well)*
+* [Maps license](./LICENSE.maps) *(`island.json`, `bungalow.json`)*
 * [Assets license](./LICENSE.assets) *(the files inside the `src/assets/` folder)*
-
-### About third party assets
-
-If you add third party assets in your map, do not forget to:
-1. Credit the author and license with the "tilesetCopyright" property present in the properties of each tilesets in the `map.json` file
-2. Add the license text in LICENSE.assets

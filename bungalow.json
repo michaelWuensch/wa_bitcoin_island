@@ -651,6 +651,16 @@
  "orientation":"orthogonal",
  "properties":[
         {
+         "name":"mapCopyright",
+         "type":"string",
+         "value":"Credits: Michael W\u00fcnsch (https:\/\/github.com\/michaelWuensch) \n\nLicense: MIT \n\nCopyright (c) 2022 Michael W\u00fcnsch\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and\/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+        }, 
+        {
+         "name":"mapImage",
+         "type":"string",
+         "value":"bungalow.png"
+        }, 
+        {
          "name":"script",
          "type":"string",
          "value":"script.js"
@@ -662,7 +672,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"src\/assets\/Beach_D (Bungalow).png",
+         "image":"src\/assets\/beach\/Beach_D (Bungalow).png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -694,7 +704,7 @@
         {
          "columns":16,
          "firstgid":257,
-         "image":"src\/assets\/Beach_A4.png",
+         "image":"src\/assets\/beach\/Beach_A4.png",
          "imageheight":320,
          "imagewidth":512,
          "margin":0,
@@ -707,11 +717,17 @@
         {
          "columns":16,
          "firstgid":417,
-         "image":"src\/assets\/Beach_A2.png",
+         "image":"src\/assets\/beach\/Beach_A2.png",
          "imageheight":384,
          "imagewidth":512,
          "margin":0,
          "name":"Beach_A2",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"MOST OF THE BUNGALOW ASSETS:\n\nYou must not use these assets in any other project! They were purchased for the purpose of this project.\nTo use these assets on your own project you have to purchase a license:\nhttps:\/\/kokororeflections.com\/product\/kr-summer-beach-tileset-for-rpgs\/ \n \n"
+                }],
          "spacing":0,
          "tilecount":192,
          "tileheight":32,
@@ -720,7 +736,7 @@
         {
          "columns":12,
          "firstgid":609,
-         "image":"src\/assets\/Doors.png",
+         "image":"src\/assets\/beach\/Doors.png",
          "imageheight":256,
          "imagewidth":384,
          "margin":0,
@@ -733,7 +749,7 @@
         {
          "columns":49,
          "firstgid":705,
-         "image":"src\/assets\/non-rm-a2-square.png",
+         "image":"src\/assets\/beach\/non-rm-a2-square.png",
          "imageheight":2336,
          "imagewidth":1568,
          "margin":0,
@@ -746,7 +762,7 @@
         {
          "columns":49,
          "firstgid":4282,
-         "image":"src\/assets\/non-rm-a3.png",
+         "image":"src\/assets\/beach\/non-rm-a3.png",
          "imageheight":224,
          "imagewidth":1568,
          "margin":0,
@@ -759,11 +775,17 @@
         {
          "columns":6,
          "firstgid":4625,
-         "image":"src\/assets\/WA_Special_Zones.png",
+         "image":"src\/assets\/workAdventure\/WA_Special_Zones.png",
          "imageheight":64,
          "imagewidth":192,
          "margin":0,
          "name":"WA_Special_Zones",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"WORKADVENTURE SPECIFIC RESOURCES LICENSE\n\nThe User shall handle assets with the WorkAdventure specific resources license as follows:\n\n1. These Assets may be used only in maps produced for WorkAdventure (SAAS or self-hosted version).\n2. These Assets may be modified (colors or size changed, inverted, trimmed, etc.) only for purposes of use in maps produced for WorkAdventure (SAAS or self-hosted version).\n3. These Assets or those modified pursuant to the previous item may undergo Distribution, etc. with maps produced for WorkAdventure. Furthermore, the User may not perform Distribution, etc. of individual Assets or those modified, or Distribution, etc. in combination with programs, etc. other than the map. However, the User may duplicate, transfer, publicly transmit, or enable transmission of personally-modified Assets to other Authorized Users free of charge.\n\n"
+                }],
          "spacing":0,
          "tilecount":12,
          "tileheight":32,
@@ -782,7 +804,7 @@
         {
          "columns":2,
          "firstgid":4637,
-         "image":"src\/assets\/kalendarSign.png",
+         "image":"src\/assets\/cc0\/kalendarSign.png",
          "imageheight":64,
          "imagewidth":64,
          "margin":0,
@@ -795,7 +817,7 @@
         {
          "columns":16,
          "firstgid":4641,
-         "image":"src\/assets\/Beach_B (Beach).png",
+         "image":"src\/assets\/beach\/Beach_B (Beach).png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -808,7 +830,7 @@
         {
          "columns":7,
          "firstgid":4897,
-         "image":"src\/assets\/Bitcoin.png",
+         "image":"src\/assets\/beach\/Bitcoin.png",
          "imageheight":288,
          "imagewidth":224,
          "margin":0,
@@ -821,7 +843,7 @@
         {
          "columns":2,
          "firstgid":4960,
-         "image":"src\/assets\/arrow.png",
+         "image":"src\/assets\/cc0\/arrow.png",
          "imageheight":64,
          "imagewidth":64,
          "margin":0,
@@ -834,7 +856,7 @@
         {
          "columns":2,
          "firstgid":4964,
-         "image":"src\/assets\/beachWriting.png",
+         "image":"src\/assets\/cc0\/beachWriting.png",
          "imageheight":32,
          "imagewidth":64,
          "margin":0,
@@ -847,7 +869,7 @@
         {
          "columns":2,
          "firstgid":4966,
-         "image":"src\/assets\/RoomNumbers.png",
+         "image":"src\/assets\/cc0\/RoomNumbers.png",
          "imageheight":96,
          "imagewidth":64,
          "margin":0,
