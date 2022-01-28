@@ -5,10 +5,63 @@ import {bootstrapExtra} from "@workadventure/scripting-api-extra";
 // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure.
 bootstrapExtra().catch(e => console.error(e));
 
+///////////////////////
+// World configuration
+///////////////////////
+
+let Room1Available = true;
+let Room2Available = true;
+let Room3Available = true;
+
+let StartJitsiInRoomsImmediatelly = false;
+
+let Room1Topic = "Q & A";
+let Room2Topic = "MainMeetup";
+let Room3Topic = "Lightning";
+let BeachTopic = "Random talk";
+
+///////////////////////
+// Configuration end
+///////////////////////
+
+if (!Room1Available) {
+    WA.room.setProperty('Door1OpenZone', 'doorVariable', 'fakeDoorVar');
+    Room1Topic = "Closed";
+    WA.room.showLayer('Room1Closed');
+    WA.room.onEnterLayer('Door1OpenZone').subscribe(() => {
+        displayActionMessage("This room is closed today.", 2000);
+    })
+}
+
+if (!Room2Available) {
+    WA.room.setProperty('Door2OpenZone', 'doorVariable', 'fakeDoorVar');
+    Room2Topic = "Closed";
+    WA.room.showLayer('Room2Closed');
+    WA.room.onEnterLayer('Door2OpenZone').subscribe(() => {
+        displayActionMessage("This room is closed today.", 2000);
+    })
+}
+
+if (!Room3Available) {
+    WA.room.setProperty('Door3OpenZone', 'doorVariable', 'fakeDoorVar');
+    Room3Topic = "Closed";
+    WA.room.showLayer('Room3Closed');
+    WA.room.onEnterLayer('Door3OpenZone').subscribe(() => {
+        displayActionMessage("This room is closed today.", 2000);
+    })
+}
+
+if (StartJitsiInRoomsImmediatelly){
+    WA.room.setProperty('jitsiRoom1', 'jitsiTrigger', 'noTrigger');
+    WA.room.setProperty('jitsiRoom2', 'jitsiTrigger', 'noTrigger');
+    WA.room.setProperty('jitsiRoom3', 'jitsiTrigger', 'noTrigger');
+}
+
+
 let currentPopup: any = undefined;
 
 WA.room.onEnterLayer('scheduleZone').subscribe(() => {
-    currentPopup =  WA.ui.openPopup("schedulePopup","Room 1: Q & A\n\nRoom 2: Main Meetup\n\nRoom 3: Lightning\n\nBeach: Random Talk",[]);
+    currentPopup =  WA.ui.openPopup("schedulePopup","Room 1: " + Room1Topic + "\n\nRoom 2: " + Room2Topic + "\n\nRoom 3: " + Room3Topic + "\n\nBeach: "+ BeachTopic,[]);
 })
 WA.room.onLeaveLayer('scheduleZone').subscribe(closePopUp)
 
@@ -32,4 +85,16 @@ function closePopUp(){
         currentPopup.close();
         currentPopup = undefined;
     }
+}
+
+function displayActionMessage(message : string, durationInMS : number){
+    const triggerMessage = WA.ui.displayActionMessage({
+        message: message,
+        callback: () => { },
+    });
+    
+    setTimeout(() => {
+        // later
+        triggerMessage.remove();
+    }, durationInMS)
 }
