@@ -80,6 +80,11 @@ WA.room.onEnterLayer('portZone').subscribe(() => {
 })
 WA.room.onLeaveLayer('portZone').subscribe(closePopUp)
 
+WA.room.onEnterLayer('blockchainZone').subscribe(() => {
+    currentPopup =  WA.ui.openPopup("blockchainPopup","Wow! Maybe an ancient concept of a blockchain?\n\nThere is even some \"data\" in that blocks...",[]);
+})
+WA.room.onLeaveLayer('blockchainZone').subscribe(closePopUp)
+
 function closePopUp(){
     if (currentPopup !== undefined) {
         currentPopup.close();
