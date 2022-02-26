@@ -145,7 +145,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"island.json"
+                 "value":"island.json#start"
                 }],
          "type":"tilelayer",
          "visible":true,
